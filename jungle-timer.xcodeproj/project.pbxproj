@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B078D974171C90320077EC66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078D973171C90320077EC66 /* UIKit.framework */; };
+		B078D976171C90320077EC66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078D975171C90320077EC66 /* Foundation.framework */; };
+		B078D978171C90320077EC66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078D977171C90320077EC66 /* CoreGraphics.framework */; };
+		B078D97E171C90320077EC66 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B078D97C171C90320077EC66 /* InfoPlist.strings */; };
+		B078D980171C90320077EC66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B078D97F171C90320077EC66 /* main.m */; };
+		B078D984171C90320077EC66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B078D983171C90320077EC66 /* AppDelegate.m */; };
+		B078D986171C90320077EC66 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B078D985171C90320077EC66 /* Default.png */; };
+		B078D988171C90320077EC66 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B078D987171C90320077EC66 /* Default@2x.png */; };
+		B078D98A171C90320077EC66 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B078D989171C90320077EC66 /* Default-568h@2x.png */; };
+		B078D98D171C90320077EC66 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078D98B171C90320077EC66 /* MainStoryboard_iPhone.storyboard */; };
+		B078D990171C90320077EC66 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078D98E171C90320077EC66 /* MainStoryboard_iPad.storyboard */; };
+		B078D993171C90320077EC66 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B078D992171C90320077EC66 /* MainViewController.m */; };
+		B078D996171C90320077EC66 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B078D995171C90320077EC66 /* FlipsideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B078D970171C90320077EC66 /* jungle-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jungle-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B078D973171C90320077EC66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B078D975171C90320077EC66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B078D977171C90320077EC66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B078D97B171C90320077EC66 /* jungle-timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jungle-timer-Info.plist"; sourceTree = "<group>"; };
+		B078D97D171C90320077EC66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B078D97F171C90320077EC66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B078D981171C90320077EC66 /* jungle-timer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jungle-timer-Prefix.pch"; sourceTree = "<group>"; };
+		B078D982171C90320077EC66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B078D983171C90320077EC66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B078D985171C90320077EC66 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B078D987171C90320077EC66 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B078D989171C90320077EC66 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B078D98C171C90320077EC66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B078D98F171C90320077EC66 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B078D991171C90320077EC66 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B078D992171C90320077EC66 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B078D994171C90320077EC66 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		B078D995171C90320077EC66 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B078D96D171C90320077EC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B078D974171C90320077EC66 /* UIKit.framework in Frameworks */,
+				B078D976171C90320077EC66 /* Foundation.framework in Frameworks */,
+				B078D978171C90320077EC66 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B078D967171C90320077EC66 = {
+			isa = PBXGroup;
+			children = (
+				B078D979171C90320077EC66 /* jungle-timer */,
+				B078D972171C90320077EC66 /* Frameworks */,
+				B078D971171C90320077EC66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B078D971171C90320077EC66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B078D970171C90320077EC66 /* jungle-timer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B078D972171C90320077EC66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B078D973171C90320077EC66 /* UIKit.framework */,
+				B078D975171C90320077EC66 /* Foundation.framework */,
+				B078D977171C90320077EC66 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B078D979171C90320077EC66 /* jungle-timer */ = {
+			isa = PBXGroup;
+			children = (
+				B078D982171C90320077EC66 /* AppDelegate.h */,
+				B078D983171C90320077EC66 /* AppDelegate.m */,
+				B078D98B171C90320077EC66 /* MainStoryboard_iPhone.storyboard */,
+				B078D98E171C90320077EC66 /* MainStoryboard_iPad.storyboard */,
+				B078D991171C90320077EC66 /* MainViewController.h */,
+				B078D992171C90320077EC66 /* MainViewController.m */,
+				B078D994171C90320077EC66 /* FlipsideViewController.h */,
+				B078D995171C90320077EC66 /* FlipsideViewController.m */,
+				B078D97A171C90320077EC66 /* Supporting Files */,
+			);
+			path = "jungle-timer";
+			sourceTree = "<group>";
+		};
+		B078D97A171C90320077EC66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B078D97B171C90320077EC66 /* jungle-timer-Info.plist */,
+				B078D97C171C90320077EC66 /* InfoPlist.strings */,
+				B078D97F171C90320077EC66 /* main.m */,
+				B078D981171C90320077EC66 /* jungle-timer-Prefix.pch */,
+				B078D985171C90320077EC66 /* Default.png */,
+				B078D987171C90320077EC66 /* Default@2x.png */,
+				B078D989171C90320077EC66 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B078D96F171C90320077EC66 /* jungle-timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B078D999171C90320077EC66 /* Build configuration list for PBXNativeTarget "jungle-timer" */;
+			buildPhases = (
+				B078D96C171C90320077EC66 /* Sources */,
+				B078D96D171C90320077EC66 /* Frameworks */,
+				B078D96E171C90320077EC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jungle-timer";
+			productName = "jungle-timer";
+			productReference = B078D970171C90320077EC66 /* jungle-timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B078D968171C90320077EC66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bathroom Gaming";
+			};
+			buildConfigurationList = B078D96B171C90320077EC66 /* Build configuration list for PBXProject "jungle-timer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B078D967171C90320077EC66;
+			productRefGroup = B078D971171C90320077EC66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B078D96F171C90320077EC66 /* jungle-timer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B078D96E171C90320077EC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B078D97E171C90320077EC66 /* InfoPlist.strings in Resources */,
+				B078D986171C90320077EC66 /* Default.png in Resources */,
+				B078D988171C90320077EC66 /* Default@2x.png in Resources */,
+				B078D98A171C90320077EC66 /* Default-568h@2x.png in Resources */,
+				B078D98D171C90320077EC66 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B078D990171C90320077EC66 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B078D96C171C90320077EC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B078D980171C90320077EC66 /* main.m in Sources */,
+				B078D984171C90320077EC66 /* AppDelegate.m in Sources */,
+				B078D993171C90320077EC66 /* MainViewController.m in Sources */,
+				B078D996171C90320077EC66 /* FlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B078D97C171C90320077EC66 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B078D97D171C90320077EC66 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B078D98B171C90320077EC66 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B078D98C171C90320077EC66 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B078D98E171C90320077EC66 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B078D98F171C90320077EC66 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B078D997171C90320077EC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B078D998171C90320077EC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B078D99A171C90320077EC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jungle-timer/jungle-timer-Prefix.pch";
+				INFOPLIST_FILE = "jungle-timer/jungle-timer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B078D99B171C90320077EC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jungle-timer/jungle-timer-Prefix.pch";
+				INFOPLIST_FILE = "jungle-timer/jungle-timer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B078D96B171C90320077EC66 /* Build configuration list for PBXProject "jungle-timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B078D997171C90320077EC66 /* Debug */,
+				B078D998171C90320077EC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B078D999171C90320077EC66 /* Build configuration list for PBXNativeTarget "jungle-timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B078D99A171C90320077EC66 /* Debug */,
+				B078D99B171C90320077EC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B078D968171C90320077EC66 /* Project object */;
+}
