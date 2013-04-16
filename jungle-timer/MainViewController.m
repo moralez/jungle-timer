@@ -8,6 +8,18 @@
 
 #import "MainViewController.h"
 
+#define kBlueSideBlueBuffId     @"Blue Side Blue Buff"
+#define kPurpleSideBlueBuffId   @"Purple Side Blue Buff"
+#define kBlueSideRedBuffId      @"Blue Side Red Buff"
+#define kPurpleSideRedBuffId    @"Purple Side Red Buff"
+#define kDragonId               @"Dragon"
+#define kBaronNashorId          @"Baron Nashor"
+
+#define kBlueRespawnTime        30
+#define kRedRespawnTime         300
+#define kDragonRespawnTime      360
+#define kBaronRespawnTime       420
+
 @interface MainViewController ()
 
 @end
@@ -18,6 +30,30 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.blueBlueBuffButton setupButtonWithId:kBlueSideBlueBuffId
+                                   respawnTime:kBlueRespawnTime
+                                   andDelegate:self];
+    
+    [self.purpleBlueBuffButton setupButtonWithId:kPurpleSideBlueBuffId
+                                     respawnTime:kBlueRespawnTime
+                                     andDelegate:self];
+    
+    [self.blueRedBuffButton setupButtonWithId:kBlueSideRedBuffId
+                                  respawnTime:kRedRespawnTime
+                                  andDelegate:self];
+    
+    [self.purpleRedBuffButton setupButtonWithId:kPurpleSideRedBuffId
+                                    respawnTime:kRedRespawnTime
+                                    andDelegate:self];
+    
+    [self.dragonButton setupButtonWithId:kDragonId
+                             respawnTime:kDragonRespawnTime
+                             andDelegate:self];
+    
+    [self.baronButton setupButtonWithId:kBaronNashorId
+                            respawnTime:kBaronRespawnTime
+                            andDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,6 +100,10 @@
     } else {
         [self performSegueWithIdentifier:@"showAlternate" sender:sender];
     }
+}
+
+- (void)timerFired:(JungleTimerButton *)button {
+    NSLog(@"Timer fired!");
 }
 
 @end
