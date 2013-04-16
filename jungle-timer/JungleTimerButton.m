@@ -7,7 +7,7 @@
 //
 
 #import "JungleTimerButton.h"
-#import "AppDelegate.h"
+#import "AppPreferences.h"
 
 #define kCountdownSelector      countdown
 #define kToggleTimerSelector    toggleTimer
@@ -71,7 +71,7 @@
         
         if (currSeconds == 0) {
             currMinute -= 1;
-            currSeconds = 60;
+            currSeconds = 59;
         } else if (currSeconds > 0) {
             currSeconds -= 1;
         }
@@ -92,8 +92,8 @@
     NSString *countdownText = @"";
     int totalSeconds = (currMinute * 60) + currSeconds;
     
-    if ([AppDelegate showMinutesAndSeconds]) {
-        countdownText = [NSString stringWithFormat:@"%@%d%@%02d",@"Time : ",currMinute,@":",currSeconds];
+    if ([AppPreferences showMinutesAndSeconds]) {
+        countdownText = [NSString stringWithFormat:@"%d%@%02d", currMinute, @":", currSeconds];
     } else {
         countdownText = [NSString stringWithFormat:@"%i", totalSeconds];
     }

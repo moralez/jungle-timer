@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  PreferencesViewController.h
 //  jungle-timer
 //
 //  Created by Johnny Moralez on 4/15/13.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface PreferencesViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) IBOutlet UIButton *minutesAndSecondsButton;
 
 @end

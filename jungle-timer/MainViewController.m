@@ -15,7 +15,7 @@
 #define kDragonId               @"Dragon"
 #define kBaronNashorId          @"Baron Nashor"
 
-#define kBlueRespawnTime        30
+#define kBlueRespawnTime        300
 #define kRedRespawnTime         300
 #define kDragonRespawnTime      360
 #define kBaronRespawnTime       420

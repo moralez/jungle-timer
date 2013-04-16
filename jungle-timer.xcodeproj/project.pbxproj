@@ -14,6 +14,10 @@
 		B07390C5171CC04D00ED6667 /* dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = B07390BF171CC04D00ED6667 /* dragon.png */; };
 		B07390C6171CC04D00ED6667 /* purple-ancient-golem.png in Resources */ = {isa = PBXBuildFile; fileRef = B07390C0171CC04D00ED6667 /* purple-ancient-golem.png */; };
 		B07390C7171CC04D00ED6667 /* purple-lizard-elder.png in Resources */ = {isa = PBXBuildFile; fileRef = B07390C1171CC04D00ED6667 /* purple-lizard-elder.png */; };
+		B07390CA171CFB1A00ED6667 /* AppPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B07390C9171CFB1A00ED6667 /* AppPreferences.m */; };
+		B07390CD171CFE6500ED6667 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07390CC171CFE6500ED6667 /* PreferencesViewController.m */; };
+		B07390D0171D021500ED6667 /* check-box-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = B07390CE171D021500ED6667 /* check-box-empty.png */; };
+		B07390D1171D021500ED6667 /* check-box-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B07390CF171D021500ED6667 /* check-box-selected.png */; };
 		B078D974171C90320077EC66 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078D973171C90320077EC66 /* UIKit.framework */; };
 		B078D976171C90320077EC66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078D975171C90320077EC66 /* Foundation.framework */; };
 		B078D978171C90320077EC66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B078D977171C90320077EC66 /* CoreGraphics.framework */; };
@@ -38,6 +42,12 @@
 		B07390BF171CC04D00ED6667 /* dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dragon.png; path = images/dragon.png; sourceTree = "<group>"; };
 		B07390C0171CC04D00ED6667 /* purple-ancient-golem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple-ancient-golem.png"; path = "images/purple-ancient-golem.png"; sourceTree = "<group>"; };
 		B07390C1171CC04D00ED6667 /* purple-lizard-elder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple-lizard-elder.png"; path = "images/purple-lizard-elder.png"; sourceTree = "<group>"; };
+		B07390C8171CFB1A00ED6667 /* AppPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreferences.h; sourceTree = "<group>"; };
+		B07390C9171CFB1A00ED6667 /* AppPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPreferences.m; sourceTree = "<group>"; };
+		B07390CB171CFE6500ED6667 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		B07390CC171CFE6500ED6667 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		B07390CE171D021500ED6667 /* check-box-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-box-empty.png"; sourceTree = "<group>"; };
+		B07390CF171D021500ED6667 /* check-box-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-box-selected.png"; sourceTree = "<group>"; };
 		B078D970171C90320077EC66 /* jungle-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jungle-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078D973171C90320077EC66 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B078D975171C90320077EC66 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +89,8 @@
 				B07390BC171CC04D00ED6667 /* baron-nashor.png */,
 				B07390BD171CC04D00ED6667 /* blue-ancient-golem.png */,
 				B07390BE171CC04D00ED6667 /* blue-lizard-elder.png */,
+				B07390CE171D021500ED6667 /* check-box-empty.png */,
+				B07390CF171D021500ED6667 /* check-box-selected.png */,
 				B07390BF171CC04D00ED6667 /* dragon.png */,
 				B07390C0171CC04D00ED6667 /* purple-ancient-golem.png */,
 				B07390C1171CC04D00ED6667 /* purple-lizard-elder.png */,
@@ -119,14 +131,18 @@
 				B07390B2171C9F8D00ED6667 /* images */,
 				B078D982171C90320077EC66 /* AppDelegate.h */,
 				B078D983171C90320077EC66 /* AppDelegate.m */,
+				B07390C8171CFB1A00ED6667 /* AppPreferences.h */,
+				B07390C9171CFB1A00ED6667 /* AppPreferences.m */,
+				B078D994171C90320077EC66 /* FlipsideViewController.h */,
+				B078D995171C90320077EC66 /* FlipsideViewController.m */,
 				B07390B3171CA58300ED6667 /* JungleTimerButton.h */,
 				B07390B4171CA58300ED6667 /* JungleTimerButton.m */,
 				B078D98B171C90320077EC66 /* MainStoryboard_iPhone.storyboard */,
 				B078D98E171C90320077EC66 /* MainStoryboard_iPad.storyboard */,
 				B078D991171C90320077EC66 /* MainViewController.h */,
 				B078D992171C90320077EC66 /* MainViewController.m */,
-				B078D994171C90320077EC66 /* FlipsideViewController.h */,
-				B078D995171C90320077EC66 /* FlipsideViewController.m */,
+				B07390CB171CFE6500ED6667 /* PreferencesViewController.h */,
+				B07390CC171CFE6500ED6667 /* PreferencesViewController.m */,
 				B078D97A171C90320077EC66 /* Supporting Files */,
 			);
 			path = "jungle-timer";
@@ -209,6 +225,8 @@
 				B07390C5171CC04D00ED6667 /* dragon.png in Resources */,
 				B07390C6171CC04D00ED6667 /* purple-ancient-golem.png in Resources */,
 				B07390C7171CC04D00ED6667 /* purple-lizard-elder.png in Resources */,
+				B07390D0171D021500ED6667 /* check-box-empty.png in Resources */,
+				B07390D1171D021500ED6667 /* check-box-selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +242,8 @@
 				B078D993171C90320077EC66 /* MainViewController.m in Sources */,
 				B078D996171C90320077EC66 /* FlipsideViewController.m in Sources */,
 				B07390B5171CA58300ED6667 /* JungleTimerButton.m in Sources */,
+				B07390CA171CFB1A00ED6667 /* AppPreferences.m in Sources */,
+				B07390CD171CFE6500ED6667 /* PreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
