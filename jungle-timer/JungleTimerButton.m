@@ -43,6 +43,11 @@
     [self addTarget:self
              action:@selector(toggleTimer)
    forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.titleLabel setFont:[UIFont systemFontOfSize:40.0f]];
+    [self.titleLabel setShadowColor:[UIColor blackColor]];
+    [self.titleLabel setShadowOffset:CGSizeMake(2.0, 3.0)];
+    [self.titleLabel setTextColor:[UIColor whiteColor]];
 
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0206A271722F18400A60D29 /* SummonersRiftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0206A261722F18400A60D29 /* SummonersRiftViewController.m */; };
+		B0206A2A1722F66C00A60D29 /* JungleTimerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0206A291722F66C00A60D29 /* JungleTimerCell.m */; };
 		B039924F17223EDC004114F1 /* summoners-rift-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B039924E17223EDC004114F1 /* summoners-rift-icon.png */; };
 		B0399251172245EE004114F1 /* twisted-treeline-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0399250172245EE004114F1 /* twisted-treeline-icon.png */; };
 		B0399253172246DC004114F1 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = B0399252172246DC004114F1 /* gear.png */; };
@@ -41,6 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0206A251722F18400A60D29 /* SummonersRiftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummonersRiftViewController.h; sourceTree = "<group>"; };
+		B0206A261722F18400A60D29 /* SummonersRiftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummonersRiftViewController.m; sourceTree = "<group>"; };
+		B0206A281722F66C00A60D29 /* JungleTimerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JungleTimerCell.h; sourceTree = "<group>"; };
+		B0206A291722F66C00A60D29 /* JungleTimerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JungleTimerCell.m; sourceTree = "<group>"; };
 		B039924E17223EDC004114F1 /* summoners-rift-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "summoners-rift-icon.png"; path = "images/summoners-rift-icon.png"; sourceTree = "<group>"; };
 		B0399250172245EE004114F1 /* twisted-treeline-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twisted-treeline-icon.png"; path = "images/twisted-treeline-icon.png"; sourceTree = "<group>"; };
 		B0399252172246DC004114F1 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
@@ -158,12 +164,16 @@
 				B078D995171C90320077EC66 /* FlipsideViewController.m */,
 				B07390B3171CA58300ED6667 /* JungleTimerButton.h */,
 				B07390B4171CA58300ED6667 /* JungleTimerButton.m */,
+				B0206A281722F66C00A60D29 /* JungleTimerCell.h */,
+				B0206A291722F66C00A60D29 /* JungleTimerCell.m */,
 				B078D98B171C90320077EC66 /* MainStoryboard_iPhone.storyboard */,
 				B078D98E171C90320077EC66 /* MainStoryboard_iPad.storyboard */,
 				B078D991171C90320077EC66 /* MainViewController.h */,
 				B078D992171C90320077EC66 /* MainViewController.m */,
 				B07390CB171CFE6500ED6667 /* PreferencesViewController.h */,
 				B07390CC171CFE6500ED6667 /* PreferencesViewController.m */,
+				B0206A251722F18400A60D29 /* SummonersRiftViewController.h */,
+				B0206A261722F18400A60D29 /* SummonersRiftViewController.m */,
 				B039925A1722505A004114F1 /* TwistedTreelineViewController.h */,
 				B039925B1722505A004114F1 /* TwistedTreelineViewController.m */,
 				B078D97A171C90320077EC66 /* Supporting Files */,
@@ -274,6 +284,8 @@
 				B07390CA171CFB1A00ED6667 /* AppPreferences.m in Sources */,
 				B07390CD171CFE6500ED6667 /* PreferencesViewController.m in Sources */,
 				B039925C1722505A004114F1 /* TwistedTreelineViewController.m in Sources */,
+				B0206A271722F18400A60D29 /* SummonersRiftViewController.m in Sources */,
+				B0206A2A1722F66C00A60D29 /* JungleTimerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
