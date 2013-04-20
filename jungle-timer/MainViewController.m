@@ -102,6 +102,8 @@
     }
 }
 
+#pragma mark JungleTimerButton Delegate Methods
+
 - (void)timerFired:(JungleTimerButton *)button {
     NSLog(@"Timer fired!");
 }

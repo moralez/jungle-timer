@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B039924F17223EDC004114F1 /* summoners-rift-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B039924E17223EDC004114F1 /* summoners-rift-icon.png */; };
+		B0399251172245EE004114F1 /* twisted-treeline-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0399250172245EE004114F1 /* twisted-treeline-icon.png */; };
+		B0399253172246DC004114F1 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = B0399252172246DC004114F1 /* gear.png */; };
+		B039925517224DBD004114F1 /* vilemaw.png in Resources */ = {isa = PBXBuildFile; fileRef = B039925417224DBD004114F1 /* vilemaw.png */; };
+		B039925817225028004114F1 /* left-altar.png in Resources */ = {isa = PBXBuildFile; fileRef = B039925617225027004114F1 /* left-altar.png */; };
+		B039925917225028004114F1 /* right-altar.png in Resources */ = {isa = PBXBuildFile; fileRef = B039925717225027004114F1 /* right-altar.png */; };
+		B039925C1722505A004114F1 /* TwistedTreelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B039925B1722505A004114F1 /* TwistedTreelineViewController.m */; };
 		B07390B5171CA58300ED6667 /* JungleTimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B07390B4171CA58300ED6667 /* JungleTimerButton.m */; };
 		B07390C2171CC04D00ED6667 /* baron-nashor.png in Resources */ = {isa = PBXBuildFile; fileRef = B07390BC171CC04D00ED6667 /* baron-nashor.png */; };
 		B07390C3171CC04D00ED6667 /* blue-ancient-golem.png in Resources */ = {isa = PBXBuildFile; fileRef = B07390BD171CC04D00ED6667 /* blue-ancient-golem.png */; };
@@ -34,6 +41,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B039924E17223EDC004114F1 /* summoners-rift-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "summoners-rift-icon.png"; path = "images/summoners-rift-icon.png"; sourceTree = "<group>"; };
+		B0399250172245EE004114F1 /* twisted-treeline-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twisted-treeline-icon.png"; path = "images/twisted-treeline-icon.png"; sourceTree = "<group>"; };
+		B0399252172246DC004114F1 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		B039925417224DBD004114F1 /* vilemaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vilemaw.png; path = images/vilemaw.png; sourceTree = "<group>"; };
+		B039925617225027004114F1 /* left-altar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left-altar.png"; path = "images/left-altar.png"; sourceTree = "<group>"; };
+		B039925717225027004114F1 /* right-altar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-altar.png"; path = "images/right-altar.png"; sourceTree = "<group>"; };
+		B039925A1722505A004114F1 /* TwistedTreelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwistedTreelineViewController.h; sourceTree = "<group>"; };
+		B039925B1722505A004114F1 /* TwistedTreelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwistedTreelineViewController.m; sourceTree = "<group>"; };
 		B07390B3171CA58300ED6667 /* JungleTimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JungleTimerButton.h; sourceTree = "<group>"; };
 		B07390B4171CA58300ED6667 /* JungleTimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JungleTimerButton.m; sourceTree = "<group>"; };
 		B07390BC171CC04D00ED6667 /* baron-nashor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "baron-nashor.png"; path = "images/baron-nashor.png"; sourceTree = "<group>"; };
@@ -86,14 +101,20 @@
 		B07390B2171C9F8D00ED6667 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B039925617225027004114F1 /* left-altar.png */,
+				B039925717225027004114F1 /* right-altar.png */,
 				B07390BC171CC04D00ED6667 /* baron-nashor.png */,
 				B07390BD171CC04D00ED6667 /* blue-ancient-golem.png */,
 				B07390BE171CC04D00ED6667 /* blue-lizard-elder.png */,
 				B07390CE171D021500ED6667 /* check-box-empty.png */,
 				B07390CF171D021500ED6667 /* check-box-selected.png */,
 				B07390BF171CC04D00ED6667 /* dragon.png */,
+				B0399252172246DC004114F1 /* gear.png */,
 				B07390C0171CC04D00ED6667 /* purple-ancient-golem.png */,
 				B07390C1171CC04D00ED6667 /* purple-lizard-elder.png */,
+				B039924E17223EDC004114F1 /* summoners-rift-icon.png */,
+				B0399250172245EE004114F1 /* twisted-treeline-icon.png */,
+				B039925417224DBD004114F1 /* vilemaw.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -143,6 +164,8 @@
 				B078D992171C90320077EC66 /* MainViewController.m */,
 				B07390CB171CFE6500ED6667 /* PreferencesViewController.h */,
 				B07390CC171CFE6500ED6667 /* PreferencesViewController.m */,
+				B039925A1722505A004114F1 /* TwistedTreelineViewController.h */,
+				B039925B1722505A004114F1 /* TwistedTreelineViewController.m */,
 				B078D97A171C90320077EC66 /* Supporting Files */,
 			);
 			path = "jungle-timer";
@@ -227,6 +250,12 @@
 				B07390C7171CC04D00ED6667 /* purple-lizard-elder.png in Resources */,
 				B07390D0171D021500ED6667 /* check-box-empty.png in Resources */,
 				B07390D1171D021500ED6667 /* check-box-selected.png in Resources */,
+				B039924F17223EDC004114F1 /* summoners-rift-icon.png in Resources */,
+				B0399251172245EE004114F1 /* twisted-treeline-icon.png in Resources */,
+				B0399253172246DC004114F1 /* gear.png in Resources */,
+				B039925517224DBD004114F1 /* vilemaw.png in Resources */,
+				B039925817225028004114F1 /* left-altar.png in Resources */,
+				B039925917225028004114F1 /* right-altar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +273,7 @@
 				B07390B5171CA58300ED6667 /* JungleTimerButton.m in Sources */,
 				B07390CA171CFB1A00ED6667 /* AppPreferences.m in Sources */,
 				B07390CD171CFE6500ED6667 /* PreferencesViewController.m in Sources */,
+				B039925C1722505A004114F1 /* TwistedTreelineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

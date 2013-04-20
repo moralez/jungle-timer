@@ -9,7 +9,7 @@
 #import "FlipsideViewController.h"
 #import "JungleTimerButton.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIPopoverControllerDelegate, JungleTimerDelegate>
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIPopoverControllerDelegate, JungleTimerDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 

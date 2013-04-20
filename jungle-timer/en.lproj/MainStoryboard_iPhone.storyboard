@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Twisted Treeline-->
+        <!--Twisted Treeline View Controller - Twisted Treeline-->
         <scene sceneID="aZU-ee-dPh">
             <objects>
-                <viewController id="v6C-86-QHb" sceneMemberID="viewController">
+                <viewController id="v6C-86-QHb" customClass="TwistedTreelineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hkf-23-CD6">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -19,26 +19,11 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-Hh-flt" customClass="JungleTimerButton">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="Fg2-Yh-8M8"/>
-                                    <constraint firstAttribute="width" constant="130" id="gH5-qz-ldk"/>
+                                    <constraint firstAttribute="height" constant="130" id="qJF-4U-FeH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <size key="titleShadowOffset" width="2" height="3"/>
-                                <state key="normal" backgroundImage="blue-ancient-golem.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g72-f0-yBa" customClass="JungleTimerButton">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="zEx-37-hR4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                                <size key="titleShadowOffset" width="2" height="3"/>
-                                <state key="normal" backgroundImage="purple-ancient-golem.png">
+                                <state key="normal" backgroundImage="vilemaw.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,18 +37,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <size key="titleShadowOffset" width="2" height="3"/>
-                                <state key="normal" backgroundImage="blue-lizard-elder.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQc-VN-xqz" customClass="JungleTimerButton">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                                <size key="titleShadowOffset" width="2" height="3"/>
-                                <state key="normal" backgroundImage="purple-lizard-elder.png">
+                                <state key="normal" backgroundImage="left-altar.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -77,21 +51,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <size key="titleShadowOffset" width="2" height="3"/>
-                                <state key="normal" backgroundImage="dragon.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-Xp-zcO" customClass="JungleTimerButton">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="WiN-v7-hEn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
-                                <size key="titleShadowOffset" width="2" height="3"/>
-                                <state key="normal" backgroundImage="baron-nashor.png">
+                                <state key="normal" backgroundImage="right-altar.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -103,35 +63,31 @@
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XFC-Hh-flt" firstAttribute="top" secondItem="Hkf-23-CD6" secondAttribute="top" constant="59" id="0zG-Yb-wBU"/>
-                            <constraint firstItem="iQc-VN-xqz" firstAttribute="top" secondItem="fAF-AM-r0b" secondAttribute="top" type="default" id="4e6-Ah-Tec"/>
-                            <constraint firstItem="F3Y-Xp-zcO" firstAttribute="leading" secondItem="iQc-VN-xqz" secondAttribute="leading" type="default" id="5uY-gf-hAO"/>
-                            <constraint firstItem="g72-f0-yBa" firstAttribute="leading" secondItem="iQc-VN-xqz" secondAttribute="leading" type="default" id="DJE-Yw-dQg"/>
                             <constraint firstItem="slU-Vz-Eqk" firstAttribute="top" secondItem="Hkf-23-CD6" secondAttribute="top" type="default" id="EQx-rx-qXe"/>
-                            <constraint firstAttribute="trailing" secondItem="g72-f0-yBa" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LQa-f8-5Aq"/>
                             <constraint firstItem="GS6-tT-Wv1" firstAttribute="leading" secondItem="Hkf-23-CD6" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="RZm-s4-MqV"/>
                             <constraint firstItem="fAF-AM-r0b" firstAttribute="leading" secondItem="Hkf-23-CD6" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="YV9-qU-eA0"/>
-                            <constraint firstItem="XFC-Hh-flt" firstAttribute="trailing" secondItem="fAF-AM-r0b" secondAttribute="trailing" type="default" id="Ze5-ez-jNe"/>
+                            <constraint firstAttribute="trailing" secondItem="GS6-tT-Wv1" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="b6Z-m8-20d"/>
+                            <constraint firstAttribute="trailing" secondItem="XFC-Hh-flt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bgc-Cp-MjD"/>
                             <constraint firstItem="fAF-AM-r0b" firstAttribute="top" secondItem="Hkf-23-CD6" secondAttribute="top" constant="204" id="eJY-fT-NoH"/>
-                            <constraint firstItem="fAF-AM-r0b" firstAttribute="trailing" secondItem="GS6-tT-Wv1" secondAttribute="trailing" type="default" id="gbP-G1-Vo1"/>
-                            <constraint firstAttribute="trailing" secondItem="F3Y-Xp-zcO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="jSc-Ef-aV9"/>
+                            <constraint firstAttribute="trailing" secondItem="fAF-AM-r0b" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iKg-vS-IWo"/>
                             <constraint firstItem="slU-Vz-Eqk" firstAttribute="leading" secondItem="Hkf-23-CD6" secondAttribute="leading" type="default" id="kyB-mC-SOn"/>
-                            <constraint firstAttribute="trailing" secondItem="iQc-VN-xqz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pfS-Iv-b6U"/>
                             <constraint firstAttribute="bottom" secondItem="GS6-tT-Wv1" secondAttribute="bottom" constant="21" id="pjJ-c5-0sU"/>
-                            <constraint firstItem="g72-f0-yBa" firstAttribute="bottom" secondItem="XFC-Hh-flt" secondAttribute="bottom" type="default" id="u4u-5x-eEQ"/>
                             <constraint firstItem="slU-Vz-Eqk" firstAttribute="trailing" secondItem="Hkf-23-CD6" secondAttribute="trailing" type="default" id="uSh-zf-bgq"/>
-                            <constraint firstItem="iQc-VN-xqz" firstAttribute="bottom" secondItem="fAF-AM-r0b" secondAttribute="bottom" type="default" id="ul8-OT-vJP"/>
-                            <constraint firstAttribute="bottom" secondItem="F3Y-Xp-zcO" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="x6b-I9-Hor"/>
                             <constraint firstItem="XFC-Hh-flt" firstAttribute="leading" secondItem="Hkf-23-CD6" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xdh-xn-7ar"/>
-                            <constraint firstItem="XFC-Hh-flt" firstAttribute="top" secondItem="g72-f0-yBa" secondAttribute="top" type="default" id="yTR-Gu-wXV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Twisted Treeline" id="ejK-NH-69M"/>
+                    <tabBarItem key="tabBarItem" title="Twisted Treeline" image="twisted-treeline-icon.png" id="ejK-NH-69M"/>
+                    <connections>
+                        <outlet property="leftAltarButton" destination="fAF-AM-r0b" id="31H-5t-aOH"/>
+                        <outlet property="rightAltarButton" destination="GS6-tT-Wv1" id="pv2-0d-d6y"/>
+                        <outlet property="vilemawButton" destination="XFC-Hh-flt" id="QYP-uM-tAo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6W-O5-cof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="475" y="875"/>
         </scene>
-        <!--Preferences View Controller - Item-->
+        <!--Preferences View Controller - Settings-->
         <scene sceneID="OYZ-XH-wFM">
             <objects>
                 <viewController id="UPl-c0-lpg" customClass="PreferencesViewController" sceneMemberID="viewController">
@@ -175,7 +131,7 @@
                             <constraint firstItem="gY9-Ui-5gD" firstAttribute="centerY" secondItem="DhT-Hv-HbB" secondAttribute="centerY" type="default" id="n6Q-c8-2U7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="3mm-o8-LIr"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear.png" id="3mm-o8-LIr"/>
                     <connections>
                         <outlet property="minutesAndSecondsButton" destination="gY9-Ui-5gD" id="fmL-2f-qNC"/>
                     </connections>
@@ -195,7 +151,7 @@
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="gno-oI-zyl">
                                 <items>
                                     <navigationItem title="Jungle" id="hSA-c6-cYP">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="XCA-Ug-O2n">
+                                        <barButtonItem key="rightBarButtonItem" style="done" id="XCA-Ug-O2n">
                                             <button key="customView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="10">
                                                 <rect key="frame" x="297" y="12" width="18" height="19"/>
                                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
@@ -322,7 +278,7 @@
                             <constraint firstItem="Yed-d2-LyV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zHa-Go-UzR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Summoner's Rift" id="5oH-wr-KRb"/>
+                    <tabBarItem key="tabBarItem" title="Summoner's Rift" image="summoners-rift-icon.png" id="5oH-wr-KRb"/>
                     <connections>
                         <outlet property="baronButton" destination="NZG-IW-HgF" id="PGG-TD-S2e"/>
                         <outlet property="blueBlueBuffButton" destination="Brw-ih-Pdz" id="C32-x1-1S9"/>
@@ -386,7 +342,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXX-5i-jSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="182"/>
+            <point key="canvasLocation" x="-65" y="875"/>
         </scene>
     </scenes>
     <resources>
@@ -396,8 +352,14 @@
         <image name="check-box-empty.png" width="258" height="258"/>
         <image name="check-box-selected.png" width="258" height="258"/>
         <image name="dragon.png" width="120" height="120"/>
+        <image name="gear.png" width="30" height="30"/>
+        <image name="left-altar.png" width="280" height="130"/>
         <image name="purple-ancient-golem.png" width="120" height="120"/>
         <image name="purple-lizard-elder.png" width="120" height="120"/>
+        <image name="right-altar.png" width="280" height="130"/>
+        <image name="summoners-rift-icon.png" width="30" height="30"/>
+        <image name="twisted-treeline-icon.png" width="30" height="30"/>
+        <image name="vilemaw.png" width="300" height="130"/>
     </resources>
     <classes>
         <class className="FlipsideViewController" superclassName="UIViewController">
@@ -412,6 +374,7 @@
         <class className="MainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
+                <relationship kind="action" name="togglePopover:"/>
                 <relationship kind="outlet" name="baronButton" candidateClass="JungleTimerButton"/>
                 <relationship kind="outlet" name="blueBlueBuffButton" candidateClass="JungleTimerButton"/>
                 <relationship kind="outlet" name="blueRedBuffButton" candidateClass="JungleTimerButton"/>
@@ -428,6 +391,14 @@
             <relationships>
                 <relationship kind="action" name="toggleShowMinutesAndSeconds:"/>
                 <relationship kind="outlet" name="minutesAndSecondsButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="TwistedTreelineViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TwistedTreelineViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="leftAltarButton" candidateClass="JungleTimerButton"/>
+                <relationship kind="outlet" name="rightAltarButton" candidateClass="JungleTimerButton"/>
+                <relationship kind="outlet" name="vilemawButton" candidateClass="JungleTimerButton"/>
             </relationships>
         </class>
     </classes>

@@ -27,8 +27,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
-        NSLog(@"button init'd");
     }
     return self;
 }
@@ -49,7 +47,6 @@
 }
 
 - (void)toggleTimer {
-    NSLog(@"Toggling Timer");
     if ([self.timer isValid]) {
         [self.timer invalidate];
         [self setTitle:@"" forState:UIControlStateNormal];
@@ -100,12 +97,12 @@
     
     [self setTitle:countdownText forState:UIControlStateNormal];
     
-    CGFloat fontSize = 45.0f;
+    CGFloat fontSize = 40.0f;
     
     if (totalSeconds < (self.respawnTime / 3)) {
-        fontSize = 75.0f;
-    } else if (totalSeconds < (self.respawnTime / 2)) {
         fontSize = 60.0f;
+    } else if (totalSeconds < (self.respawnTime / 2)) {
+        fontSize = 50.0f;
     }
     
     [self.titleLabel setFont:[UIFont systemFontOfSize:fontSize]];
