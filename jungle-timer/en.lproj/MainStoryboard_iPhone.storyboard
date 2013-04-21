@@ -126,6 +126,31 @@
                                     <action selector="toggleShowMinutesAndSeconds:" destination="UPl-c0-lpg" eventType="touchUpInside" id="aZM-ky-ajx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Vibrate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiD-OP-3ng">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FqR-GB-KAn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgA-oO-LU9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yoh-XY-RM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="check-box-empty.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="check-box-selected.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleVibrate:" destination="UPl-c0-lpg" eventType="touchUpInside" id="zL1-md-uEU"/>
+                                </connections>
+                            </button>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="Xea-07-eyf">
                                 <items>
                                     <navigationItem title="Settings" id="IMt-Ic-dH0"/>
@@ -135,17 +160,24 @@
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Xea-07-eyf" firstAttribute="top" secondItem="33Q-DY-3AM" secondAttribute="top" type="default" id="0mS-Da-3gB"/>
+                            <constraint firstItem="HiD-OP-3ng" firstAttribute="trailing" secondItem="DhT-Hv-HbB" secondAttribute="trailing" type="default" id="6xd-bZ-gtd"/>
                             <constraint firstItem="DhT-Hv-HbB" firstAttribute="centerY" secondItem="gY9-Ui-5gD" secondAttribute="centerY" type="default" id="CN7-yt-4WE"/>
+                            <constraint firstItem="AgA-oO-LU9" firstAttribute="top" secondItem="gY9-Ui-5gD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="HC2-kj-LG2"/>
+                            <constraint firstItem="AgA-oO-LU9" firstAttribute="leading" secondItem="gY9-Ui-5gD" secondAttribute="leading" type="default" id="HgB-3g-ooa"/>
                             <constraint firstItem="gY9-Ui-5gD" firstAttribute="top" secondItem="33Q-DY-3AM" secondAttribute="top" constant="79" id="IO5-xx-bA8"/>
                             <constraint firstAttribute="trailing" secondItem="gY9-Ui-5gD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="J0D-z2-c9U"/>
+                            <constraint firstItem="HiD-OP-3ng" firstAttribute="leading" secondItem="33Q-DY-3AM" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="RvH-7h-eEt"/>
                             <constraint firstItem="Xea-07-eyf" firstAttribute="trailing" secondItem="33Q-DY-3AM" secondAttribute="trailing" type="default" id="eQu-od-ceS"/>
                             <constraint firstItem="DhT-Hv-HbB" firstAttribute="leading" secondItem="33Q-DY-3AM" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qAW-Pi-o9x"/>
                             <constraint firstItem="Xea-07-eyf" firstAttribute="leading" secondItem="33Q-DY-3AM" secondAttribute="leading" type="default" id="r6I-AU-noy"/>
+                            <constraint firstAttribute="trailing" secondItem="AgA-oO-LU9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="t4J-px-rn0"/>
+                            <constraint firstItem="HiD-OP-3ng" firstAttribute="centerY" secondItem="AgA-oO-LU9" secondAttribute="centerY" type="default" id="t7e-Uc-rpa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear.png" id="3mm-o8-LIr"/>
                     <connections>
                         <outlet property="minutesAndSecondsButton" destination="gY9-Ui-5gD" id="fmL-2f-qNC"/>
+                        <outlet property="vibrateButton" destination="AgA-oO-LU9" id="IlY-k9-otV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHy-MS-idD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -456,7 +488,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PreferencesViewController.h"/>
             <relationships>
                 <relationship kind="action" name="toggleShowMinutesAndSeconds:"/>
+                <relationship kind="action" name="toggleVibrate:"/>
                 <relationship kind="outlet" name="minutesAndSecondsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="vibrateButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="SummonersRiftViewController" superclassName="UICollectionViewController">

@@ -9,10 +9,14 @@
 #import <Foundation/Foundation.h>
 
 #define kShowMinutesAndSeconds @"showMinutesAndSeconds"
+#define kVibrate               @"vibrate"
 
 @interface AppPreferences : NSObject
 
 + (BOOL)showMinutesAndSeconds;
++ (BOOL)shouldVibrate;
+
 + (void)setShowMinutesAndSeconds:(BOOL)show;
++ (void)setVibrate:(BOOL)vibrate;
 
 @end

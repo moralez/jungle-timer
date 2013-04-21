@@ -11,5 +11,6 @@
 @interface PreferencesViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIButton *minutesAndSecondsButton;
+@property (strong, nonatomic) IBOutlet UIButton *vibrateButton;
 
 @end

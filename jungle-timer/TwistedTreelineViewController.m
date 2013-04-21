@@ -7,6 +7,8 @@
 //
 
 #import "TwistedTreelineViewController.h"
+#import "AppPreferences.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 #define kVilemawId      @"Vilemaw"
 #define kLeftAltarId    @"Left Altar"
@@ -57,7 +59,9 @@
 #pragma mark JungleTimerButton Delegate Methods
 
 - (void)timerFired:(JungleTimerButton *)button {
-    NSLog(@"Timer fired!");
+    if ([AppPreferences shouldVibrate]) {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    }
 }
 
 @end

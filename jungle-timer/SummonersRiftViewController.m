@@ -8,6 +8,8 @@
 
 #import "SummonersRiftViewController.h"
 #import "JungleTimerCell.h"
+#import "AppPreferences.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 #define kBlueSideBlueBuffId     @"blue-ancient-golem"
 #define kPurpleSideBlueBuffId   @"purple-ancient-golem"
@@ -94,7 +96,9 @@
 #pragma mark JungleTimerDelegate Methods
 
 - (void)timerFired:(JungleTimerButton *)button {
-    
+    if ([AppPreferences shouldVibrate]) {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    }
 }
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "AppPreferences.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 #define kBlueSideBlueBuffId     @"Blue Side Blue Buff"
 #define kPurpleSideBlueBuffId   @"Purple Side Blue Buff"
@@ -105,7 +107,9 @@
 #pragma mark JungleTimerButton Delegate Methods
 
 - (void)timerFired:(JungleTimerButton *)button {
-    NSLog(@"Timer fired!");
+    if ([AppPreferences shouldVibrate]) {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    }
 }
 
 @end

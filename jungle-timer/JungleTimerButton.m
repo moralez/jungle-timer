@@ -105,9 +105,9 @@
     CGFloat fontSize = 40.0f;
     
     if (totalSeconds < (self.respawnTime / 3)) {
-        fontSize = 60.0f;
+        fontSize = 55.0f;
     } else if (totalSeconds < (self.respawnTime / 2)) {
-        fontSize = 50.0f;
+        fontSize = 45.0f;
     }
     
     [self.titleLabel setFont:[UIFont systemFontOfSize:fontSize]];

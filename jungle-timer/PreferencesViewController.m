@@ -12,6 +12,7 @@
 @interface PreferencesViewController ()
 
 - (IBAction)toggleShowMinutesAndSeconds:(id)sender;
+- (IBAction)toggleVibrate:(id)sender;
 
 @end
 
@@ -43,6 +44,11 @@
 - (IBAction)toggleShowMinutesAndSeconds:(id)sender {
     [self.minutesAndSecondsButton setSelected:!self.minutesAndSecondsButton.selected];
     [AppPreferences setShowMinutesAndSeconds:self.minutesAndSecondsButton.selected];
+}
+
+- (IBAction)toggleVibrate:(id)sender {
+    [self.vibrateButton setSelected:!self.vibrateButton.selected];
+    [AppPreferences setVibrate:self.vibrateButton.selected];
 }
 
 @end
